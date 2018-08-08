@@ -1,51 +1,50 @@
-﻿using System;
-using IsUnique;
+﻿using Solution;
 using NUnit.Framework;
 
 namespace SolutionTests
 {
     [TestFixture]
-    public class Tests
+    public sealed class IsUniqueTests
     {
         [Test]
         public void Test1()
         {
-            var actual = Solution.SolutionWithDictionary("tes");
+            var actual = IsUnique.SolutionWithDictionary("tes");
             Assert.AreEqual(true, actual);
         }
         
         [Test]
         public void Test2()
         {
-            var actual = Solution.SolutionWithDictionary("test");
+            var actual = IsUnique.SolutionWithDictionary("test");
             Assert.AreEqual(false, actual);
         }
         
         [Test]
         public void Test3()
         {
-            var actual = Solution.SolutionWithDictionary("tes1234567");
+            var actual = IsUnique.SolutionWithDictionary("tes1234567");
             Assert.AreEqual(true, actual);
         }
         
         [Test]
         public void Test12()
         {
-            var actual = Solution.SolutionWithoutSdditionalDataStructure("tes");
+            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("tes");
             Assert.AreEqual(true, actual);
         }
         
         [Test]
         public void Test22()
         {
-            var actual = Solution.SolutionWithoutSdditionalDataStructure("test");
+            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("test");
             Assert.AreEqual(false, actual);
         }
         
         [Test]
         public void Test32()
         {
-            var actual = Solution.SolutionWithoutSdditionalDataStructure("tes1234567");
+            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("tes1234567");
             Assert.AreEqual(true, actual);
         }
     }

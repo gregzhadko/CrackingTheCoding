@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace IsUnique
+namespace Solution
 {
-    public class Solution
+    public class IsUnique
     {
         public static bool SolutionWithDictionary(string input)
         {
