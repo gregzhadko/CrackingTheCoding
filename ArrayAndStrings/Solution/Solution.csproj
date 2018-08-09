@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckPermutation.cs" />
     <Compile Include="IsUnique.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
