@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="ArraysAndStrings\CheckPermutation.cs" />
     <Compile Include="ArraysAndStrings\IsUnique.cs" />
+    <Compile Include="ArraysAndStrings\PalindromePermutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
