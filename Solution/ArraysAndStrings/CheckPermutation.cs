@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Solution
+namespace Solution.ArraysAndStrings
 {
     public static class CheckPermutation
     {

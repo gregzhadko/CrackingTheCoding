@@ -1,7 +1,7 @@
-﻿using Solution;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Solution.ArraysAndStrings;
 
-namespace SolutionTests
+namespace SolutionTests.ArraysAndStringsTests
 {
     [TestFixture]
     public sealed class IsUniqueTests

@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
-using Solution;
+using Solution.ArraysAndStrings;
 
-namespace SolutionTests
+namespace SolutionTests.ArraysAndStringsTests
 {
     [TestFixture]
     public sealed class CheckPermutationTests
