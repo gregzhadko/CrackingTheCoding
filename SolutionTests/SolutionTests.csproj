@@ -46,6 +46,7 @@
     <Compile Include="ArraysAndStringsTests\IsUniqueTests.cs" />
     <Compile Include="ArraysAndStringsTests\OneWayTests.cs" />
     <Compile Include="ArraysAndStringsTests\PalindromePermutationTests.cs" />
+    <Compile Include="ArraysAndStringsTests\StringCompressionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
