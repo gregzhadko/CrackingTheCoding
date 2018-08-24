@@ -42,6 +42,7 @@
     <Compile Include="ArraysAndStrings\IsUnique.cs" />
     <Compile Include="ArraysAndStrings\OneWay.cs" />
     <Compile Include="ArraysAndStrings\PalindromePermutation.cs" />
+    <Compile Include="ArraysAndStrings\RotateMatrix.cs" />
     <Compile Include="ArraysAndStrings\StringCompression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

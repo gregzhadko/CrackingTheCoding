@@ -1,6 +1,6 @@
 ﻿namespace Solution.ArraysAndStrings
 {
-    public class OneWay
+    public sealed class OneWay
     {
         public bool IsOneEdit(string original, string resulted)
         {
@@ -28,7 +28,10 @@
 
             for (int i = 0; i < original.Length; i++)
             {
-                if (original[i] == resulted[i]) continue;
+                if (original[i] == resulted[i])
+                {
+                    continue;
+                }
 
                 if (wasChanged)
                 {

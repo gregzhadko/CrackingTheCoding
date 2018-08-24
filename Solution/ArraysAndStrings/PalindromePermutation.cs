@@ -36,11 +36,20 @@ namespace Solution.ArraysAndStrings
             var usedMiddle = false;
             foreach (var key in dict.Keys)
             {
-                if (dict[key] % 2 != 1) continue;
+                if (dict[key] % 2 != 1)
+                {
+                    continue;
+                }
 
-                if (!odd) return false;
-                
-                if (usedMiddle) return false;
+                if (!odd)
+                {
+                    return false;
+                }
+
+                if (usedMiddle)
+                {
+                    return false;
+                }
 
                 usedMiddle = true;
             }

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Solution.ArraysAndStrings
 {
-    public class IsUnique
+    public static class IsUnique
     {
         public static bool SolutionWithDictionary(string input)
         {
@@ -22,7 +22,7 @@ namespace Solution.ArraysAndStrings
             return true;
         }
 
-        public static bool SolutionWithoutSdditionalDataStructure(string input)
+        public static bool SolutionWithoutAdditionalDataStructure(string input)
         {
             var sorted = input.OrderBy(c => c).ToList();
             for (int i = 0; i < sorted.Count - 1; i++)

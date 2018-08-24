@@ -30,21 +30,21 @@ namespace SolutionTests.ArraysAndStringsTests
         [Test]
         public void Test12()
         {
-            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("tes");
+            var actual = IsUnique.SolutionWithoutAdditionalDataStructure("tes");
             Assert.AreEqual(true, actual);
         }
         
         [Test]
         public void Test22()
         {
-            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("test");
+            var actual = IsUnique.SolutionWithoutAdditionalDataStructure("test");
             Assert.AreEqual(false, actual);
         }
         
         [Test]
         public void Test32()
         {
-            var actual = IsUnique.SolutionWithoutSdditionalDataStructure("tes1234567");
+            var actual = IsUnique.SolutionWithoutAdditionalDataStructure("tes1234567");
             Assert.AreEqual(true, actual);
         }
     }
