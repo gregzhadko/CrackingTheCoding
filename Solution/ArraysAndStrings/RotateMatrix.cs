@@ -38,22 +38,22 @@ namespace Solution.ArraysAndStrings
 
         public void Rotate()
         {
-            var width = Pixels.GetUpperBound(0) + 1;
-            if (width == 1)
+            var size = Pixels.GetUpperBound(0) + 1;
+            if (size == 1)
             {
                 return;
             }
 
-            int maxShift = Math.Abs(width / 2);
+            int maxShift = Math.Abs(size / 2);
             var shift = 0;
             do
             {
-                for (int i = shift; i < width - 1 - shift; i++)
+                for (int i = shift; i < size - 1 - shift; i++)
                 {
-                    var temp = Pixels[width - shift - i - 1, shift];
-                    Pixels[width - shift - i - 1, shift] = Pixels[width - shift - i - 1, width - shift - 1];
-                    Pixels[width - shift - i - 1, width - shift - 1] = Pixels[shift + i, width - shift - 1];
-                    Pixels[shift, width - shift - i - 1] = Pixels[shift, shift + i];
+                    var temp = Pixels[size - 1 - shift - i, shift];
+                    Pixels[size - 1 - shift - i, shift] = Pixels[size - 1 - shift, size - 1 - shift - i];
+                    Pixels[size - 1 - shift, size - 1 - shift - i] = Pixels[shift + i, size - 1 - shift];
+                    Pixels[shift + i, size - 1 - shift] = Pixels[shift, shift + i];
                     Pixels[shift, shift + i] = temp;
                 }
 
