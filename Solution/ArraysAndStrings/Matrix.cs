@@ -39,7 +39,14 @@ namespace Solution.ArraysAndStrings
         public void Rotate()
         {
             var size = Elements.GetUpperBound(0) + 1;
+
             if (size == 1)
+            {
+                return;
+            }
+
+            var width = Elements.Length / size;
+            if (width != size)
             {
                 return;
             }
@@ -63,6 +70,36 @@ namespace Solution.ArraysAndStrings
                     return;
                 }
             } while (true);
+        }
+
+        public void Zero()
+        {
+            var width = Elements.GetUpperBound(0) + 1;
+            var height = Elements.Length / width;
+
+            var widthZeroIndexes = new bool[width];
+            var heightZeroIndexes = new bool[height];
+
+            for (int i = 0; i < width; i++)
+            {
+                for (int j = 0; j < height; j++)
+                {
+                    if (Elements[i, j] == 0)
+                    {
+                        widthZeroIndexes[i] = true;
+                        heightZeroIndexes[j] = true;
+                    }
+                }
+            }
+
+            for (int i = 0; i < width; i++)
+            {
+                for (int j = 0; j < height; j++)
+                {
+                    var isZero = widthZeroIndexes[i] || heightZeroIndexes[j];
+                    Elements[i, j] = isZero ? 0 : Elements[i, j];
+                }
+            }
         }
     }
 }
