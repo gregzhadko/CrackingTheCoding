@@ -43,6 +43,7 @@
     <Compile Include="ArraysAndStrings\PalindromePermutation.cs" />
     <Compile Include="ArraysAndStrings\RotateMatrix.cs" />
     <Compile Include="ArraysAndStrings\StringCompression.cs" />
+    <Compile Include="ArraysAndStrings\StringRotation.cs" />
     <Compile Include="ArraysAndStrings\ZeroMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
