@@ -34,12 +34,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArraysAndStrings\CheckPermutation.cs" />
     <Compile Include="ArraysAndStrings\IsUnique.cs" />
+    <Compile Include="ArraysAndStrings\Matrix.cs" />
     <Compile Include="ArraysAndStrings\OneWay.cs" />
     <Compile Include="ArraysAndStrings\PalindromePermutation.cs" />
     <Compile Include="ArraysAndStrings\RotateMatrix.cs" />
