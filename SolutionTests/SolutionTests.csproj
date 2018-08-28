@@ -42,6 +42,7 @@
     <Compile Include="ArraysAndStringsTests\StringCompressionTests.cs" />
     <Compile Include="ArraysAndStringsTests\StringRotationTests.cs" />
     <Compile Include="ArraysAndStringsTests\ZeroMatrixTests.cs" />
+    <Compile Include="LinkedList\RemoveDupsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
