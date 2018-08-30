@@ -23,10 +23,14 @@ namespace Solution.LinkedList
 
         public void AppendToTail(T d)
         {
-            var end = new Node<T>(d);
+            AppendToTail(new Node<T>(d));
+        }
+
+        public void AppendToTail(Node<T> node)
+        {
             if (Head == null)
             {
-                Head = end;
+                Head = node;
                 return;
             }
 
@@ -36,8 +40,8 @@ namespace Solution.LinkedList
                 n = n.Next;
             }
 
-            n.Next = end;
-            end.Previous = n;
+            n.Next = node;
+            node.Previous = n;
         }
 
         public T[] ToArray()

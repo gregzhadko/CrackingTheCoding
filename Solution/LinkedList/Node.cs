@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Solution.LinkedList
 {
     public sealed class Node<T>
