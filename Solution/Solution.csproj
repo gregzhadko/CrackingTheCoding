@@ -45,6 +45,7 @@
     <Compile Include="ArraysAndStrings\StringCompression.cs" />
     <Compile Include="ArraysAndStrings\StringRotation.cs" />
     <Compile Include="ArraysAndStrings\ZeroMatrix.cs" />
+    <Compile Include="LinkedList\DeleteMiddleNode.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Node.cs" />
     <Compile Include="LinkedList\RemoveDups.cs" />

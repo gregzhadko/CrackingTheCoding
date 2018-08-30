@@ -6,7 +6,11 @@ namespace Solution.LinkedList
 {
     public class LinkedList<T>
     {
-        public Node<T> Head { get; }
+        public Node<T> Head { get; set; }
+
+        public LinkedList()
+        {
+        }
 
         public LinkedList(Node<T> head)
         {
@@ -20,6 +24,12 @@ namespace Solution.LinkedList
         public void AppendToTail(T d)
         {
             var end = new Node<T>(d);
+            if (Head == null)
+            {
+                Head = end;
+                return;
+            }
+
             var n = Head;
             while (n.Next != null)
             {
