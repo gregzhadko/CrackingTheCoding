@@ -18,7 +18,7 @@ namespace Solution.ArraysAndStrings
             var currentElement = formatted[0];
             stringBuilder.Append(currentElement);
             var count = 1;
-            bool crypted = false;
+            bool encrypted = false;
             for (int i = 1; i < formatted.Length; i++)
             {
                 if (formatted[i] != currentElement)
@@ -31,13 +31,13 @@ namespace Solution.ArraysAndStrings
                 else
                 {
                     count++;
-                    crypted = true;
+                    encrypted = true;
                 }
             }
 
             stringBuilder.Append(count);
 
-            return crypted ? stringBuilder.ToString() : formatted;
+            return encrypted ? stringBuilder.ToString() : formatted;
         }
     }
 }

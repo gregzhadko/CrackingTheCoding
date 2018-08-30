@@ -11,7 +11,7 @@ namespace Solution.ArraysAndStrings
 
             var realSize = 0;
             
-            for (int i = 0; i < input.Length; i++)
+            for (var i = 0; i < input.Length; i++)
             {
                 var c = Char.ToLower(input[i]);
 

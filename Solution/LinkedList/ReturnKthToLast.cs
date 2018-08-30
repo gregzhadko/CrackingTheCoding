@@ -1,5 +1,3 @@
-using System;
-
 namespace Solution.LinkedList
 {
     public class ReturnKthToLast<T>
@@ -18,7 +16,7 @@ namespace Solution.LinkedList
             var node1 = _list.Head;
             var node2 = _list.Head;
 
-            for (int i = 0; i < _k; i++)
+            for (var i = 0; i < _k; i++)
             {
                 node1 = node1.Next;
             }
@@ -31,7 +29,5 @@ namespace Solution.LinkedList
 
             return node2;
         }
-
-        
     }
 }

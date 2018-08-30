@@ -1,11 +1,12 @@
 using NUnit.Framework;
 using Solution.ArraysAndStrings;
+
 // ReSharper disable StringLiteralTypo
 
 namespace SolutionTests.ArraysAndStringsTests
 {
     [TestFixture]
-    public class StringRotationTests
+    public sealed class StringRotationTests
     {
         [Test]
         public void IsRotationTest_True()

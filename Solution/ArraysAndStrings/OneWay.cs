@@ -24,9 +24,9 @@
 
         private static bool IsOneSymbolChanged(string original, string resulted)
         {
-            bool wasChanged = false;
+            var wasChanged = false;
 
-            for (int i = 0; i < original.Length; i++)
+            for (var i = 0; i < original.Length; i++)
             {
                 if (original[i] == resulted[i])
                 {
@@ -46,10 +46,10 @@
 
         private bool IsOneSymbolAdded(string smaller, string bigger)
         {
-            bool wasDifferentFound = false;
+            var wasDifferentFound = false;
             
             var j = 0;
-            for (int i = 0; i < bigger.Length; i++, j++)
+            for (var i = 0; i < bigger.Length; i++, j++)
             {
                 if (j == smaller.Length)
                 {

@@ -44,7 +44,7 @@
     <Compile Include="ArraysAndStringsTests\ZeroMatrixTests.cs" />
     <Compile Include="LinkedList\DeleteNodeInSingleLinkedListTests.cs" />
     <Compile Include="LinkedList\PartitionTests.cs" />
-    <Compile Include="LinkedList\RemoveDupsTests.cs" />
+    <Compile Include="LinkedList\RemoveDuplicationsTests.cs" />
     <Compile Include="LinkedList\ReturnKthToLastTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

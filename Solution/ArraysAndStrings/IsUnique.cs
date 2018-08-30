@@ -25,7 +25,7 @@ namespace Solution.ArraysAndStrings
         public static bool SolutionWithoutAdditionalDataStructure(string input)
         {
             var sorted = input.OrderBy(c => c).ToList();
-            for (int i = 0; i < sorted.Count - 1; i++)
+            for (var i = 0; i < sorted.Count - 1; i++)
             {
                 if (sorted[i] == sorted[i + 1])
                 {

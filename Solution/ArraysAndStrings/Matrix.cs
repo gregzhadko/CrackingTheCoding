@@ -51,11 +51,11 @@ namespace Solution.ArraysAndStrings
                 return;
             }
 
-            int maxShift = Math.Abs(size / 2);
+            var maxShift = Math.Abs(size / 2);
             var shift = 0;
             do
             {
-                for (int i = shift; i < size - 1 - shift; i++)
+                for (var i = shift; i < size - 1 - shift; i++)
                 {
                     var temp = Elements[size - 1 - shift - i, shift];
                     Elements[size - 1 - shift - i, shift] = Elements[size - 1 - shift, size - 1 - shift - i];
@@ -80,9 +80,9 @@ namespace Solution.ArraysAndStrings
             var widthZeroIndexes = new bool[width];
             var heightZeroIndexes = new bool[height];
 
-            for (int i = 0; i < width; i++)
+            for (var i = 0; i < width; i++)
             {
-                for (int j = 0; j < height; j++)
+                for (var j = 0; j < height; j++)
                 {
                     if (Elements[i, j] == 0)
                     {
@@ -92,9 +92,9 @@ namespace Solution.ArraysAndStrings
                 }
             }
 
-            for (int i = 0; i < width; i++)
+            for (var i = 0; i < width; i++)
             {
-                for (int j = 0; j < height; j++)
+                for (var j = 0; j < height; j++)
                 {
                     var isZero = widthZeroIndexes[i] || heightZeroIndexes[j];
                     Elements[i, j] = isZero ? 0 : Elements[i, j];

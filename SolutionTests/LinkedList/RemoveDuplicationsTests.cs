@@ -1,11 +1,10 @@
-using System;
 using NUnit.Framework;
 using Solution.LinkedList;
 
 namespace SolutionTests.LinkedList
 {
     [TestFixture]
-    public sealed class RemoveDupsTests
+    public sealed class RemoveDuplicationsTests
     {
         [Test]
         public void RemoveDuplicationsTest()
